@@ -391,7 +391,7 @@ const createRouter = () => new Router({
   mode: 'history', // require service support
   scrollBehavior: () => ({ y: 0 }),
   // 👇 设置基础路由，子应用可以通过window.__MICRO_APP_BASE_ROUTE__获取基座下发的baseroute，如果没有设置baseroute属性，则此值默认为空字符串
-  base: window.__MICRO_APP_BASE_ROUTE__ || '/',
+  //base: window.__MICRO_APP_BASE_ROUTE__ || '/',
   routes: constantRoutes
 })
 

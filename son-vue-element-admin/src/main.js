@@ -51,3 +51,13 @@ new Vue({
   store,
   render: h => h(App)
 })
+// 监听基座下发的数据变化
+window.microApp.addDataListener((data) => {
+    debugger
+    console.log('监听到来自基座的路由数据')
+    // 当基座下发跳转指令时进行跳转
+    /* if (data.path) {
+      router.push(data.path)
+    }*/
+}) 
+  

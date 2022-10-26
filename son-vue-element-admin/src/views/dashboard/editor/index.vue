@@ -1,6 +1,7 @@
 <template>
   <div class="dashboard-editor-container">
     <div class=" clearfix">
+        <el-input v-model="aa" placeholder=""></el-input>
       <pan-thumb :image="avatar" style="float: left">
         Your roles:
         <span v-for="item in roles" :key="item" class="pan-info-roles">{{ item }}</span>
@@ -27,6 +28,7 @@ export default {
   components: { PanThumb, GithubCorner },
   data() {
     return {
+        aa:'',
       emptyGif: 'https://wpimg.wallstcn.com/0e03b7da-db9e-4819-ba10-9016ddfdaed3'
     }
   },

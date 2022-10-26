@@ -35,7 +35,10 @@ if (process.env.NODE_ENV === 'production') {
 // index.js
 import microApp from '@micro-zoe/micro-app'
 
-microApp.start()
+microApp.start({
+    /* 'disable-memory-router': true, // 关闭虚拟路由系统
+    'disable-patch-request': true, // 关闭对子应用请求的拦截 */
+  })
 
 Vue.use(Element, {
   size: Cookies.get('size') || 'medium', // set element-ui default size

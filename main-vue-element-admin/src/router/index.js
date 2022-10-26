@@ -286,19 +286,19 @@ export const asyncRoutes = [
       {
         path: 'export-excel',
         component: MyPage,
-        name: 'ExportExcel',
+        name: 'MicroApp1',
         meta: { title: 'Export Excel' }
       },
       {
         path: 'export-selected-excel',
         component: MyPage,
-        name: 'SelectExcel',
+        name: 'MicroApp1',
         meta: { title: 'Export Selected' }
       },
       {
         path: 'export-merge-header',
         component: MyPage,
-        name: 'MergeHeader',
+        name: 'MicroApp1',
         meta: { title: 'Merge Header' }
       },
       {
@@ -385,7 +385,7 @@ export const asyncRoutes = [
   {
     // 👇 非严格匹配，/my-page/* 都指向 MyPage 页面
     path: '/my-page/*', // vue-router@4.x path的写法为：'/my-page/:page*'
-    name: 'my-page',
+    name: 'MicroApp1',
     component: MyPage,
   },
   // 404 page must be placed at the end !!!
